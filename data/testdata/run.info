@@ -1,0 +1,5 @@
+param	value
+cmd_line	cuffdiff -o /group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/DEG_analysis_res -L control,treated -p 8 --compatible-hits-norm --upper-quartile-norm --multi-read-correct --frag-bias-correct /group/referenceFiles/Homo_sapiens/UCSC/hg19/hg19.GATKbundle.2.8/hg19/ucsc.hg19.fasta --min-alignment-count 10 --FDR 0.05 /group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/metatable.cuffmerged.gtf /group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/controlA/merged_controlA_abundances.cxb,/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/controlB/merged_controlB_abundances.cxb /group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/thrombinA/merged_thrombinA_abundances.cxb,/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/thrombinB/merged_thrombinB_abundances.cxb,/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/thrombinC/merged_thrombinC_abundances.cxb 
+version	2.2.1
+SVN_revision	4237
+boost_version	104700

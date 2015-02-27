@@ -1,0 +1,105 @@
+[1] "Simple pair-wise comparison analysis is conducted below"
+[1] "Rscript flag for DESeq is 1"
+[1] "Rscript flag for DESeq2 is 1"
+[1] "Rscript flag for edgeR is 1"
+[1] "/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/htseq_count_res"
+[1] "/group/biocore-analysis/yli/RNAseq-2.1.1-demo/metatable.txt"
+[1] "/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/DEG_analysis_res/DEG-htseqcount-results"
+[1] "/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/DEG_analysis_res"
+[1] "===================="
+[1] "/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/htseq_count_res"
+[1] "===================="
+[1] "################################"
+     Sample                                  countfile condition
+1  controlA  /merged_controlA.merged.bam.nsorted.count   control
+2  controlB  /merged_controlB.merged.bam.nsorted.count   control
+3 thrombinA /merged_thrombinA.merged.bam.nsorted.count   treated
+4 thrombinB /merged_thrombinB.merged.bam.nsorted.count   treated
+5 thrombinC /merged_thrombinC.merged.bam.nsorted.count   treated
+[1] "################################"
+[1] "Below is the head of file /group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/DEG_analysis_res/DEG-htseqcount-results/DEseq2orgres1-group(control)-vs-group(treated).txt"
+log2 fold change (MAP): condition control vs treated 
+Wald test p-value: condition control vs treated 
+DataFrame with 6 rows and 6 columns
+             baseMean log2FoldChange      lfcSE       stat       pvalue
+            <numeric>      <numeric>  <numeric>  <numeric>    <numeric>
+A1BG       54.1636499     -0.1264832 0.27256501 -0.4640478 6.426135e-01
+A1BG-AS1  129.8683374     -0.0494294 0.18580146 -0.2660334 7.902135e-01
+A1CF        0.0000000             NA         NA         NA           NA
+A2M      1293.8042376     -0.4175430 0.06938629 -6.0176596 1.769568e-09
+A2M-AS1    45.3622026     -0.5072764 0.31336595 -1.6187987 1.054906e-01
+A2ML1       0.3726399      0.5753803 0.52128115  1.1037811 2.696881e-01
+                 padj
+            <numeric>
+A1BG     7.149279e-01
+A1BG-AS1 8.402991e-01
+A1CF               NA
+A2M      7.154367e-09
+A2M-AS1  1.538913e-01
+A2ML1              NA
+[1] "----------"
+[1] "Below is the head of file /group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/DEG_analysis_res/DEG-htseqcount-results/edgeRorgres1-group(control)-vs-group(treated).txt"
+Comparison of groups:  treated-control 
+           logFC   logCPM PValue FDR
+ZNF117 -3.313160 5.840277      0   0
+TRAF1   3.164315 7.546905      0   0
+TSIX   -3.129970 6.945521      0   0
+XIST   -2.997208 7.798327      0   0
+MALAT1 -2.871192 8.087181      0   0
+ASPM   -2.853491 4.870236      0   0
+[1] "----------"
+[1] "################################"
+[1] "Below DEG analysis are conducted between group 1 (control) and group 2 (treated)"
+[1] "Below results is based on Cuffdiff, filtering criteria is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.05"
+[1] "length of DEG from cuffdiff result is 3621."
+[1] "duplicated genes are SRSF10" "duplicated genes are HLA-B" 
+[3] "duplicated genes are HLA-A"  "duplicated genes are HLA-C" 
+[1] "Blow results is based on DESeq, filtering criteria is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.01"
+[1] "length of DEG from DEseq analysis 3521"
+[1] "Blow results is based on edgeR, filtering criteria is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.05"
+[1] "length of DEG from edgeR analysis 3762. "
+[1] "Blow results is based on DESeq2, filtering criteria is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.01"
+[1] "length of DEG from DEseq2 analysis 3391."
+[1] "################################"
+[1] "Below comparison is for group (control)-vs-group(treated)"
+[1] "Method comparison between cuffdiff and DESeq"
+[1] "Filtering criteria for each method is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.05 on cuffdiff, and FDR adjusted p-value =0.01 on DeSeq"
+[1] "No. of DEG from cuffdiff= 3621, DEseq = 3521,common between DEseq and cuffdiff = 3014, fraction of DEG from cuffdiff with DEseq = 0.832366749516708, fraction of DEG from DEseq with cuffdiff = 0.856006816245385. "
+[1] "Method comparison between cuffdiff and DESeq2"
+[1] "Filtering criteria for each method is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.05 on cuffdiff, and FDR adjusted p-value =0.01 on DeSeq2"
+[1] "No. of DEG from cuffdiff= 3621, DEseq2 = 3391 ,common between DEseq2 and cuffdiff  = 2958, fraction of DEG from cuffdiff with DEseq2 = 0.816901408450704, fraction of DEG from DEseq2 with cuffdiff = 0.872309053376585. "
+[1] "Method comparison between cuffdiff and edgeR"
+[1] "Filtering criteria for each method is based on log2 fold change= 0.584962500721156 (fold change = 1.5), and FDR adjusted p-value = 0.05 on cuffdiff, and FDR adjusted p-value =0.05 on edgeR"
+[1] "No. of DEG from cuffdiff= 3621, edgeR = 3762, common between edgeR and cuffdiff  = 3078, fraction of DEG from cuffdiff with edgeR = 0.850041425020713, fraction of DEG from edgeR with cuffdiff = 0.818181818181818. "
+[1] "################################"
+R version 3.1.0 (2014-04-10)
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] grid      parallel  methods   stats     graphics  grDevices utils    
+[8] datasets  base     
+
+other attached packages:
+ [1] VennDiagram_1.6.9         edgeR_3.6.8              
+ [3] limma_3.20.8              DESeq2_1.4.5             
+ [5] RcppArmadillo_0.4.600.4.0 Rcpp_0.11.3              
+ [7] GenomicRanges_1.16.4      GenomeInfoDb_1.0.2       
+ [9] IRanges_1.22.10           DESeq_1.16.0             
+[11] lattice_0.20-29           locfit_1.5-9.1           
+[13] Biobase_2.24.0            BiocGenerics_0.10.0      
+[15] getopt_1.20.0            
+
+loaded via a namespace (and not attached):
+ [1] annotate_1.42.1      AnnotationDbi_1.26.0 DBI_0.3.1           
+ [4] genefilter_1.46.1    geneplotter_1.42.0   RColorBrewer_1.1-2  
+ [7] RSQLite_1.0.0        splines_3.1.0        stats4_3.1.0        
+[10] survival_2.37-7      XML_3.98-1.1         xtable_1.7-4        
+[13] XVector_0.4.0       

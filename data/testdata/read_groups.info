@@ -1,0 +1,6 @@
+file	condition	replicate_num	total_mass	norm_mass	internal_scale	external_scale
+/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/controlA/merged_controlA_abundances.cxb	control	0	3.85534e+07	3.99157e+07	1.09627	1
+/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/controlB/merged_controlB_abundances.cxb	control	1	3.8273e+07	3.99157e+07	1.08933	1
+/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/thrombinA/merged_thrombinA_abundances.cxb	treated	0	4.29119e+07	3.99157e+07	0.995663	1
+/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/thrombinB/merged_thrombinB_abundances.cxb	treated	1	3.68695e+07	3.99157e+07	0.851691	1
+/group/biocore-analysis/yli/RNAseq-2.1.1-demo/res-w-tophat/thrombinC/merged_thrombinC_abundances.cxb	treated	2	4.14743e+07	3.99157e+07	0.967042	1
