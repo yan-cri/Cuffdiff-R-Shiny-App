@@ -1,2 +1,4 @@
 # Cuffdiff-R-Shiny-App
-R shiny App to visualize cuffdiff obtained results
+
+## Introduction
+This git repo includes a R shiny App which can be used to visualize you obtained analysis results from cuffdiff. 
